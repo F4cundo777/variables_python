@@ -11,6 +11,9 @@
 
 # Ingrese primero su nombre y luego su apellido
 # Capture ambos datos e imprima su nombre completo
+from xml.dom import NoModificationAllowedErr
+
+
 print('Ingrese por consola su nombre/s:')
 nombre = str(input())
 
@@ -21,6 +24,9 @@ apellido = str(input())
 
 # Almacenar su nombre completo en una variable
 # nombre_completo = .....
-
+nombre_completo= nombre + ' ' + apellido
+print('Usted se llama', nombre_completo)
 # Imprimir la cantidad de letras que posee su nombre completo
 # cantidad_letras = len(....)
+cantidad_letras = len(nombre_completo)-1
+print('Tu nombre completo tiene', cantidad_letras,'letras')

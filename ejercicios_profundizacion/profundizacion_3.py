@@ -38,3 +38,12 @@ Cualquier duda con estos métodos pueden consultarla por el campus
 
 print('Ahora si! buena suerte')
 # Empezar aquí la resolución del ejercicio
+
+print('Ingrese por favor su apellido:')
+apellido = input()
+print('Ingrese por favor su nombre:')
+nombre = input()
+
+print('Su nombre completo en minuscula es:',nombre.lower(), apellido.lower())
+print('Su nombre completo en mayuscula es:',nombre.upper(), apellido.upper())
+print('Su nombre completo es:', nombre.capitalize(), apellido.capitalize())

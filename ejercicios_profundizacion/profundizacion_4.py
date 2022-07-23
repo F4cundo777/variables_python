@@ -43,5 +43,23 @@ https://www.pythonforbeginners.com/dictionary/python-split
 Cualquier duda con el método split pueden consultarla por el campus
 '''
 
+from traceback import print_tb
+
+
 print('Jugando con texto')
 # Empezar aquí la resolución del ejercicio
+direccion_completa = 'Monroe 2716'
+calle, altura = direccion_completa.split(' ')
+print(direccion_completa)
+
+print('ingrese el nombre y apellido de su madre:')
+madre = input()
+nombre_madre, apellido_madre = madre.split()
+
+print('ingrese el nombre y apellido de su padre:')
+padre = input()
+nombre_padre, apellido_padre = padre.split()
+
+print('ingrese su nombre:')
+nombre = input()
+print('su nombre y apellido completo es:', nombre, apellido_madre, apellido_padre)
